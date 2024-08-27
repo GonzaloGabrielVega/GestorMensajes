@@ -1,0 +1,203 @@
+[
+    {
+        "model": "mensajes.mensaje",
+        "pk": 1,
+        "fields": {
+            "texto": "Hola espero te haya llegado mi mensaje",
+            "remitente": "Oscar",
+            "destinatario": "Pedro",
+            "fecha_envio": "2024-08-26T22:25:21.175Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 2,
+        "fields": {
+            "texto": "Buenas tardes le envío mi confirmacion al evento",
+            "remitente": "Juan",
+            "destinatario": "Gonzalo",
+            "fecha_envio": "2024-08-26T22:54:15.983Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 3,
+        "fields": {
+            "texto": "Recibido",
+            "remitente": "Fernando",
+            "destinatario": "Gonzalo",
+            "fecha_envio": "2024-08-26T22:57:11.001Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 4,
+        "fields": {
+            "texto": "Hola, ¿Tenés a mano el informe para hoy?",
+            "remitente": "Julian",
+            "destinatario": "Pepe",
+            "fecha_envio": "2024-08-26T22:58:25.374Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 5,
+        "fields": {
+            "texto": "Espero te encuentres bien, te mando saludos!!",
+            "remitente": "Juan",
+            "destinatario": "Gonzalo",
+            "fecha_envio": "2024-08-27T01:18:16.709Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 6,
+        "fields": {
+            "texto": "Te veo mañana, paso por tu casa a la tarde",
+            "remitente": "Gonzalo",
+            "destinatario": "Pedro",
+            "fecha_envio": "2024-08-27T01:19:31.563Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 7,
+        "fields": {
+            "texto": "Hola Gonzalo, ¿podes revisar los documentos?",
+            "remitente": "Pepe",
+            "destinatario": "Gonzalo",
+            "fecha_envio": "2024-08-27T08:00:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 8,
+        "fields": {
+            "texto": "Confirmo mi asistencia ala reunión de mañana",
+            "remitente": "Oscar",
+            "destinatario": "Juan",
+            "fecha_envio": "2024-08-27T09:15:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 9,
+        "fields": {
+            "texto": "¿Podes pasarme los detalles del proyecto?",
+            "remitente": "Gonzalo",
+            "destinatario": "Fernando",
+            "fecha_envio": "2024-08-27T10:30:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 10,
+        "fields": {
+            "texto": "Nos vemos en la oficina a las 11",
+            "remitente": "Pedro",
+            "destinatario": "Julian",
+            "fecha_envio": "2024-08-27T10:45:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 11,
+        "fields": {
+            "texto": "Gracias por tu ayuda con el informe",
+            "remitente": "Fernando",
+            "destinatario": "Pepe",
+            "fecha_envio": "2024-08-27T11:00:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 12,
+        "fields": {
+            "texto": "Revise el documento, está todo bien",
+            "remitente": "Gonzalo",
+            "destinatario": "Oscar",
+            "fecha_envio": "2024-08-27T12:30:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 13,
+        "fields": {
+            "texto": "Podemos agendar la reunion para el viernes",
+            "remitente": "Juan",
+            "destinatario": "Gonzalo",
+            "fecha_envio": "2024-08-27T14:00:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 14,
+        "fields": {
+            "texto": "El informe va a estar listo mañana",
+            "remitente": "Julian",
+            "destinatario": "Pedro",
+            "fecha_envio": "2024-08-27T15:30:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 15,
+        "fields": {
+            "texto": "¿Me enviarias el archivo por correo?",
+            "remitente": "Fernando",
+            "destinatario": "Gonzalo",
+            "fecha_envio": "2024-08-27T16:45:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 16,
+        "fields": {
+            "texto": "Envié el archivo, revisa en el correo",
+            "remitente": "Gonzalo",
+            "destinatario": "Fernando",
+            "fecha_envio": "2024-08-27T17:00:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 17,
+        "fields": {
+            "texto": "Nos vemos en la reunión mañana a las 10",
+            "remitente": "Oscar",
+            "destinatario": "Pepe",
+            "fecha_envio": "2024-08-27T18:15:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 18,
+        "fields": {
+            "texto": "Por favor, confirma tu asistencia",
+            "remitente": "Juan",
+            "destinatario": "Julian",
+            "fecha_envio": "2024-08-27T19:30:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 19,
+        "fields": {
+            "texto": "No olvides traer los documentos mañana",
+            "remitente": "Gonzalo",
+            "destinatario": "Pedro",
+            "fecha_envio": "2024-08-27T20:45:00.000Z"
+        }
+    },
+    {
+        "model": "mensajes.mensaje",
+        "pk": 20,
+        "fields": {
+            "texto": "Gracias por la información, la reviso y te comento",
+            "remitente": "Pepe",
+            "destinatario": "Oscar",
+            "fecha_envio": "2024-08-27T21:00:00.000Z"
+        }
+    }
+]
+
