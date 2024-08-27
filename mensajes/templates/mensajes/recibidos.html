@@ -1,36 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensajes Recibidos</title>
-</head>
-<body style="background-color: #1e1e1e; color: #ffffff;">
-    <h1>Mensajes Recibidos</h1>
+{% include 'plantilla.html' %}
 
-    <!-- FORMULARIO PARA FILTRADO POR DESTINATARIO-->
+{% block title %}<h1 style="margin: 10px 2px;">Mensajes Recibidos</h1>{% endblock %}
+
+{% block content %}
+
+    <!-- Formulario de búsqueda para filtrar destinatarios-->
     <form method="get" action="{% url 'recibidos' %}" style="text-align: right; margin-bottom: 20px;">
-        <label for="destinatario" style="color: #ffffff;">Filtrar por destinatario:</label>
+        <label for="destinatario">Filtrar por destinatario:</label>
         <input type="text" id="destinatario" name="destinatario" value="{{ request.GET.destinatario }}" placeholder="Ingrese destinatario" 
-               style="padding: 8px; width: 300px; margin-right: 10px; background-color: #333; color: #ffffff; border: 1px solid #555;"> <!--INPUT PARA FILTRADO -->
-        <button type="submit" style="padding: 8px 16px; background-color: #555; color: #ffffff; border: none;">Buscar</button>
+               style="padding: 8px; width: 300px; margin-right: 10px;">
+        <button type="submit" style="padding: 8px 16px;">Buscar</button>
     </form>
 
-    <!-- MENSAJES -->
+    <!-- Mostrar mensajes -->
     {% if mensajes %}
         <div style="margin: auto; width: 80%;">
             {% for mensaje in mensajes %}
-                <div style="border: 1px solid #444; border-radius: 8px; padding: 15px; margin-bottom: 10px; background-color: #2e2e2e;">
-                    <h3 style="margin: 5px 0; color: #ffffff;">{{ mensaje.texto }}</h3>
-                    <p style="margin: 0; color: #cccccc;">Remitente: {{ mensaje.remitente }}</p>
-                    <small style="color: #aaaaaa;">Enviado el: {{ mensaje.fecha_envio }}</small>
+                <div style="border: 1px solid #555; border-radius: 8px; padding: 15px; margin-bottom: 10px;">
+                    <h3 style="margin: 5px 0; color: #ddd;">{{ mensaje.texto|lower }}</h3>
+                    <p style="margin: 0; color: #ccc;">Remitente: {{ mensaje.remitente }}</p>
+                    <small style="color: #aaa;">Enviado el: {{ mensaje.fecha_envio|date:"d-m-Y H:i" }}</small>
                 </div>
             {% endfor %}
         </div>
     {% elif request.GET.destinatario %}
         <p style="text-align: center; color: #ffffff;">No se encontraron mensajes para el destinatario "{{ request.GET.destinatario }}". Pruebe con otro destinatario</p>
     {% else %}
-        <p style="text-align: center; color: #777777;">No hay mensajes para mostrar.</p>
+        <p style="text-align: center; color: #ffffff;">No hay mensajes para mostrar.</p>
     {% endif %}
-</body>
-</html>
+{% endblock %}
